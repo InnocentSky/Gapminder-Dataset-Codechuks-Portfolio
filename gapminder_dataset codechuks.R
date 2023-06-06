@@ -1,9 +1,5 @@
 library(tidyverse)
 library(patchwork)
-library(ggplot2)
-library(gghighlight)
-library(dplyr)
-
 
 gapminder <- read.csv("gapminder_data.csv")
 
