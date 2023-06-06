@@ -1,4 +1,4 @@
-# This Project Is About Cleaning And Visualization Of The Gapminder Dataset
+# This Project Is About Cleaning And Visualization for Life Expectncy and HDI-Index Of The Gapminder Dataset
 
 library(tidyverse)
 library(patchwork)
