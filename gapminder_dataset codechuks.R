@@ -45,7 +45,6 @@ gapminder %>%
   arrange(continent) %>% 
 View()
 
-
 gapminder %>% 
   select(country,continent,year,life_exp,hdi_index,gdp) %>% 
   mutate(life_exp = replace_na(life_exp, 0)) %>% 
@@ -64,9 +63,6 @@ gapminder_dataset <- gapminder %>%
   mutate(gdp = replace_na(gdp, 0)) %>% 
   arrange(continent)
   
-
-  
-
 # Checking fr duplicate dtate 
 
 gapminder_dataset[duplicated(gapminder_dataset),] # apperantly there are no duplicated data
@@ -76,7 +72,6 @@ duplicated(gapminder_dataset)
 gapminder_dataset %>% 
   distinct() %>% 
   View()
-
 
 View(gapminder_dataset)
 
@@ -120,9 +115,7 @@ gapminder_dataset %>%
 
 View(gapminder_dataset) 
 
-
-  # Reshaping the dataset from long to wild 
-
+# Reshaping the dataset from long to wild 
 gapminder_df <- gapminder_dataset %>% 
   pivot_wider(names_from = year, values_from = c("life_exp","hdi_index","gdp"))
 
